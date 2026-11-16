@@ -1,0 +1,667 @@
+/* ==========================================================================
+   天文知識小百科 | AVANT-GARDE EDITORIAL / SWISS GRAPHIC DESIGN SYSTEM
+   THEME: 先鋒藝術天文誌 · 瑞士平面設計風格 V2.1
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif+TC:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --bg-paper: #F4F3EF;          /* 美術館紙張米白 */
+  --ink-black: #0D0D0D;         /* 極黑文字與邊框 */
+  --ink-muted: #5A5A5A;         /* 編輯次級文字 */
+  --electric-blue: #1A4BFF;     /* 高飽和電光鈷藍 */
+  --electric-blue-light: #EBF0FF;
+  --fluo-cyan: #00F0FF;         /* 微螢光青（殘影疊色） */
+  --border-width: 1px;
+  --border-solid: 1px solid var(--ink-black);
+  --border-thick: 2px solid var(--ink-black);
+  --font-display: 'Anton', sans-serif;
+  --font-serif: 'Noto Serif TC', 'Playfair Display', serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-body: 'Noto Serif TC', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-paper);
+  /* 細膩美術館紙張顆粒質感 (Subtle Museum Paper Grain) */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.038'/%3E%3C/svg%3E");
+  color: var(--ink-black);
+  font-family: var(--font-body);
+  line-height: 1.8;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   EDITORIAL MASTHEAD & HEADER
+   ========================================================================== */
+
+.editorial-masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+  background: var(--ink-black);
+  color: var(--bg-paper);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.editorial-masthead a {
+  color: var(--bg-paper);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.editorial-masthead a:hover {
+  color: var(--electric-blue);
+}
+
+.nav-header {
+  border-bottom: var(--border-solid);
+  padding: 24px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: var(--bg-paper);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand-block {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--ink-black);
+}
+
+.brand-number {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  line-height: 0.85;
+  color: var(--electric-blue);
+  letter-spacing: -0.04em;
+}
+
+.brand-text {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.brand-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-editorial {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 8px 18px;
+  background: transparent;
+  color: var(--ink-black);
+  border: var(--border-solid);
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-editorial:hover {
+  background: var(--electric-blue);
+  color: #ffffff;
+  border-color: var(--electric-blue);
+  box-shadow: 4px 4px 0px var(--ink-black);
+  transform: translate(-2px, -2px);
+}
+
+.btn-editorial.active {
+  background: var(--ink-black);
+  color: var(--bg-paper);
+}
+
+/* ==========================================================================
+   HOMEPAGE HERO & ARTISTIC COLLAGE (首頁專屬三大藝術拼貼)
+   ========================================================================== */
+
+.editorial-hero-layout {
+  border-bottom: var(--border-solid);
+  padding: 48px 36px 36px;
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  background: var(--bg-paper);
+  overflow: hidden;
+}
+
+.hero-main-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 7.5vw, 6.8rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--ink-black);
+  margin-bottom: 28px;
+}
+
+/* 元素 A: 層疊殘影字跡 (Layered Ghosting Typography) */
+.ghost-typography-stack {
+  position: absolute;
+  right: 12px;
+  bottom: -20px;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.ghost-line {
+  font-family: var(--font-display);
+  font-size: 4.8rem;
+  line-height: 0.82;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ghost-line.layer-1 {
+  color: var(--fluo-cyan);
+  opacity: 0.55;
+  transform: translate(6px, 12px) skewX(-4deg);
+  mix-blend-mode: multiply;
+}
+
+.ghost-line.layer-2 {
+  color: var(--electric-blue);
+  opacity: 0.65;
+  transform: translate(-4px, 4px) skewX(-2deg);
+  mix-blend-mode: multiply;
+}
+
+.ghost-line.layer-3 {
+  color: var(--ink-black);
+  opacity: 0.18;
+  transform: translate(2px, -4px);
+}
+
+.ghost-line.layer-top {
+  color: var(--ink-black);
+  opacity: 0.85;
+}
+
+/* 元素 B: 斜切鈷藍口袋拼貼 (Slanted Cobalt Blue Pocket Collage) */
+.pocket-collage-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  height: 380px;
+  margin-left: auto;
+  z-index: 5;
+}
+
+/* 從口袋探出的米白相框天文照片 */
+.pocket-peeking-photo {
+  position: absolute;
+  top: 10px;
+  left: 36px;
+  width: 320px;
+  height: 240px;
+  background: var(--bg-paper);
+  border: var(--border-thick);
+  padding: 10px 10px 32px 10px;
+  box-shadow: 8px 8px 0px rgba(13, 13, 13, 0.4);
+  transform: rotate(-5deg);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.pocket-peeking-photo:hover {
+  transform: rotate(-1deg) translateY(-14px);
+}
+
+.pocket-peeking-photo img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.15) grayscale(0.1);
+}
+
+.pocket-peeking-photo-caption {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-black);
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* 斜切鈷藍色紙質口袋層 (Slanted Cobalt Pocket Layer) */
+.slanted-pocket-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  background: var(--electric-blue);
+  /* 斜切角度遮罩 */
+  clip-path: polygon(0% 28%, 100% 0%, 100% 100%, 0% 100%);
+  border-bottom: var(--border-thick);
+  box-shadow: 10px 10px 0px var(--ink-black);
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 28px;
+}
+
+.pocket-label-left {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.pocket-label-right {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  line-height: 0.85;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   HOMEPAGE CARD WITH CROSS-BORDER OVERLAPPING NUMBERS (元素 C)
+   ========================================================================== */
+
+.article-card-avant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--ink-black);
+  background: #ffffff;
+  border: var(--border-solid);
+  padding: 34px 28px 24px;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 24px; /* 留出跨框空間 */
+}
+
+.article-card-avant:hover {
+  border-color: var(--ink-black);
+  box-shadow: 8px 8px 0px var(--electric-blue);
+  transform: translate(-3px, -3px);
+}
+
+/* 跨框重疊超大編號 (Cross-Border Overlapping Index Number) */
+.editorial-idx-overlap {
+  position: absolute;
+  top: -24px;
+  left: 20px;
+  font-family: var(--font-display);
+  font-size: 3.8rem;
+  line-height: 0.8;
+  color: var(--electric-blue);
+  background: var(--bg-paper);
+  border: var(--border-solid);
+  padding: 4px 10px 2px;
+  box-shadow: 3px 3px 0px var(--ink-black);
+  z-index: 10;
+  transition: all 0.25s;
+}
+
+.article-card-avant:hover .editorial-idx-overlap {
+  background: var(--ink-black);
+  color: #ffffff;
+  border-color: var(--ink-black);
+  box-shadow: 4px 4px 0px var(--electric-blue);
+}
+
+.card-top-meta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category-tag-mono {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--ink-black);
+  color: var(--bg-paper);
+  padding: 4px 10px;
+}
+
+.card-heading {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  color: var(--ink-black);
+}
+
+.card-brief {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.card-foot-mono {
+  border-top: var(--border-solid);
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}
+
+/* ==========================================================================
+   PURE EDITORIAL ARTICLE PAGE (pages/ 內文純淨排版)
+   嚴禁出現層疊殘影字或斜切拼貼，保持清爽俐落的網格閱讀體驗
+   ========================================================================== */
+
+.editorial-article-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  border-left: var(--border-solid);
+  border-right: var(--border-solid);
+  background: var(--bg-paper);
+}
+
+.article-header-banner {
+  border-bottom: var(--border-solid);
+  padding: 50px 48px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.article-big-num {
+  font-family: var(--font-display);
+  font-size: 7rem;
+  line-height: 0.85;
+  color: var(--electric-blue);
+}
+
+.article-title-text {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--ink-black);
+  margin-bottom: 12px;
+}
+
+.article-meta-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border: var(--border-solid);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: transparent;
+  color: var(--ink-black);
+}
+
+.tag-badge.accent {
+  background: var(--electric-blue);
+  color: #ffffff;
+  border-color: var(--electric-blue);
+}
+
+/* Two-column Editorial Body */
+.editorial-two-col {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  border-bottom: var(--border-solid);
+}
+
+.editorial-main-flow {
+  padding: 48px;
+  border-right: var(--border-solid);
+}
+
+.editorial-side-flow {
+  padding: 36px 28px;
+  background: #FAFAF7;
+}
+
+.lead-callout-editorial {
+  border-left: 8px solid var(--electric-blue);
+  padding: 20px 24px;
+  background: #ffffff;
+  border: var(--border-solid);
+  border-left-width: 8px;
+  border-left-color: var(--electric-blue);
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--ink-black);
+  margin-bottom: 36px;
+  box-shadow: 4px 4px 0px var(--ink-black);
+}
+
+.section-h2-editorial {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--ink-black);
+  margin: 40px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--ink-black);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.section-h2-editorial::before {
+  content: "//";
+  font-family: var(--font-mono);
+  color: var(--electric-blue);
+  font-size: 1.4rem;
+}
+
+/* Art Image Frame */
+.art-image-frame {
+  position: relative;
+  border: var(--border-solid);
+  padding: 12px;
+  background: #ffffff;
+  margin: 28px 0;
+  box-shadow: 6px 6px 0px var(--ink-black);
+  transition: all 0.3s ease;
+}
+
+.art-image-frame:hover {
+  box-shadow: 10px 10px 0px var(--electric-blue);
+  transform: translate(-2px, -2px);
+}
+
+.art-image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: contrast(1.1) grayscale(0.15);
+  transition: all 0.4s ease;
+  clip-path: polygon(
+    20px 0%, calc(100% - 20px) 0%,
+    100% 20px, 100% calc(100% - 20px),
+    calc(100% - 20px) 100%, 20px 100%,
+    0% calc(100% - 20px), 0% 20px
+  );
+}
+
+.art-image-frame:hover img {
+  filter: contrast(1.15) grayscale(0);
+}
+
+.image-caption-editorial {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-black);
+  padding-top: 12px;
+  line-height: 1.5;
+  border-top: var(--border-solid);
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.svg-editorial-frame {
+  background: #ffffff;
+  border: var(--border-solid);
+  padding: 24px;
+  margin: 24px 0;
+  box-shadow: 6px 6px 0px var(--ink-black);
+  overflow-x: auto;
+}
+
+table.editorial-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0;
+  border: var(--border-thick);
+  font-size: 0.95rem;
+}
+
+table.editorial-table th,
+table.editorial-table td {
+  padding: 14px 18px;
+  border: var(--border-solid);
+  text-align: left;
+}
+
+table.editorial-table th {
+  background: var(--ink-black);
+  color: var(--bg-paper);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+table.editorial-table tr:hover td {
+  background: var(--electric-blue-light);
+}
+
+table.editorial-table td.mono-cell {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--electric-blue);
+}
+
+.principle-box-avant {
+  border: var(--border-solid);
+  background: #ffffff;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 0px var(--ink-black);
+}
+
+.principle-box-avant h4 {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--electric-blue);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Article footer masthead */
+.article-sub-footer {
+  border-top: var(--border-solid);
+  padding: 24px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  background: var(--bg-paper);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .editorial-hero-layout {
+    grid-template-columns: 1fr;
+    padding: 36px 20px;
+  }
+  .pocket-collage-wrapper {
+    margin: 20px auto 0;
+    max-width: 360px;
+    height: 320px;
+  }
+  .pocket-peeking-photo {
+    width: 270px;
+    height: 200px;
+    left: 20px;
+  }
+  .pocket-peeking-photo img {
+    height: 145px;
+  }
+  .editorial-two-col {
+    grid-template-columns: 1fr;
+  }
+  .editorial-main-flow {
+    border-right: none;
+    border-bottom: var(--border-solid);
+    padding: 32px 20px;
+  }
+  .article-header-banner {
+    grid-template-columns: 1fr;
+    padding: 32px 20px;
+  }
+}
