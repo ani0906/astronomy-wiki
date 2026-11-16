@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天文知識小百科 | 先鋒藝術天文誌 AVANT-GARDE EDITORIAL</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="editorial-masthead">
+    <div>VOL.01 // ASTRONOMICAL ENCYCLOPEDIA // TAEA ARCHIVE (22 ENTRIES)</div>
+    <div>COLLECTION ISSUE : 2026 // SWISS GRAPHIC DESIGN</div>
+    <div>GITHUB PAGES DEPLOYED</div>
+  </div>
+
+  <header class="nav-header">
+    <a href="index.html" class="brand-block">
+      <div class="brand-number">ASTRO</div>
+      <div>
+        <div class="brand-text">天文知識小百科</div>
+        <div class="brand-sub">AVANT-GARDE EDITORIAL ARCHIVE</div>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <a href="index.md" class="btn-editorial">📄 INDEX.MD</a>
+      <a href="AGENTS.md" class="btn-editorial">🤖 AGENTS.MD</a>
+    </div>
+  </header>
+
+  <section class="editorial-hero-layout">
+    <div style="z-index: 10;">
+      <h1 class="hero-main-title">ASTRONOMY<br>ENCYCLOPEDIA</h1>
+
+      <div style="max-width: 520px; position: relative;">
+        <input type="text" id="searchInput" 
+          placeholder="SEARCH ARCHIVE // 輸入天體名稱、物理參數或關鍵字..." 
+          style="width: 100%; padding: 16px 20px; font-family: var(--font-mono); font-size: 0.95rem; border: var(--border-thick); background: #ffffff; color: var(--ink-black); outline: none; box-shadow: 6px 6px 0px var(--ink-black); transition: all 0.2s;">
+      </div>
+    </div>
+
+    <div class="pocket-collage-wrapper">
+      <div class="ghost-typography-stack">
+        <div class="ghost-line layer-1">OBSERVE * COSMOS</div>
+        <div class="ghost-line layer-2">OBSERVE * COSMOS</div>
+        <div class="ghost-line layer-3">OBSERVE * COSMOS</div>
+        <div class="ghost-line layer-top">OBSERVE * COSMOS</div>
+      </div>
+
+      <div class="pocket-peeking-photo" onclick="location.href='pages/sun.html'" title="點擊檢視 太陽 (THE SUN) 檔案">
+        <img src="assets/images/sun_sdo_304.jpg" alt="SDO 304Å 極紫外影像">
+        <div class="pocket-peeking-photo-caption">
+          FIG 01 // SDO 304Å SOLAR PLASMA ARCHIVE
+        </div>
+      </div>
+
+      <div class="slanted-pocket-layer">
+        <div class="pocket-label-left">
+          ASTRONOMICAL ARCHIVE
+        </div>
+        <div class="pocket-label-right">
+          2026
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="border-bottom: var(--border-solid); padding: 18px 36px; background: #ffffff; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+    <span style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 12px; font-weight: 700;">FILTER / 分類篩選:</span>
+    <button class="btn-editorial active" onclick="filterCategory('all')">ALL (22 全部)</button>
+    <button class="btn-editorial" onclick="filterCategory('cat1')">01 太陽系與行星科學 (19)</button>
+    <button class="btn-editorial" onclick="filterCategory('cat2')">02 系外行星與適居帶</button>
+    <button class="btn-editorial" onclick="filterCategory('cat3')">03 恆星演化與緻密天體</button>
+    <button class="btn-editorial" onclick="filterCategory('cat4')">04 星系結構與宇宙學</button>
+    <button class="btn-editorial" onclick="filterCategory('cat5')">05 天文觀測與太空任務 (3)</button>
+  </div>
+
+  <main style="max-width: 1360px; margin: 0 auto; padding: 48px 36px 80px;">
+
+    <section id="cat1" style="margin-bottom: 60px;">
+      <div style="border-bottom: 2px solid var(--ink-black); padding-bottom: 12px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--electric-blue); letter-spacing: 0.15em; font-weight: 700;">SECTION 01 // CATEGORY</div>
+          <h2 style="font-family: var(--font-display); font-size: 2.8rem; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase;">太陽系與行星科學</h2>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-muted);">19 ARTICLES ARCHIVED</div>
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; margin-bottom: 24px; color: var(--ink-black); display: flex; align-items: center; gap: 8px;">
+        <span style="color: var(--electric-blue); font-size: 1.1rem;">■</span> 1.1 類地行星與類木行星 (母恆星與八大行星全收錄)
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 36px 28px; margin-bottom: 48px;">
+        <a href="pages/sun.html" class="article-card-avant" data-search="太陽 the sun 恆星物理 主序星 73%氫 太陽黑子 蒙德極小期">
+          <span class="editorial-idx-overlap">01</span>
+          <div>
+            <div class="card-top-meta"><span class="category-tag-mono">母恆星</span></div>
+            <h3 class="card-heading">☀️ 太陽 (The Sun)</h3>
+            <p class="card-brief">佔太陽系總質量的 99.86%，由 73% 氫與 25% 氦構成。深入解析六大內部與大氣層結構、光球層黑子磁場活動及 11 年週期律動。</p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;"><span class="tag-badge">#恆星內部結構</span> <span class="tag-badge">#太陽黑子</span></div>
+            <div class="card-foot-mono"><span>DATE : 2026-11-16</span><span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span></div>
+          </div>
+        </a>
+
+        <a href="pages/solar-system-structure.html" class="article-card-avant" data-search="太陽系結構與範圍 the solar system 日球層頂 歐特雲 航海家1號 柯伊伯帶">
+          <span class="editorial-idx-overlap">02</span>
+          <div>
+            <div class="card-top-meta"><span class="category-tag-mono">空間邊界</span></div>
+            <h3 class="card-heading">🪐 太陽系結構與範圍</h3>
+            <p class="card-brief">涵蓋八大行星、矮行星與小天體。天文學區分「太陽風主導的日球層頂（~120 AU）」與「引力極限的歐特雲（~2 光年）」雙重疆界。</p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;"><span class="tag-badge">#日球層頂</span> <span class="tag-badge">#空間邊界</span></div>
+            <div class="card-foot-mono"><span>DATE : 2026-11-16</span><span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span></div>
+          </div>
+        </a>
+
+        <a href="pages/mercury.html" class="article-card-avant" data-search="水星 mercury 類地行星 軌道離心率 信使號 3:2共振 金屬核心 700K溫差">
+          <span class="editorial-idx-overlap">04</span>
+          <div>
+            <div class="card-top-meta"><span class="category-tag-mono">第一行星</span></div>
+            <h3 class="card-heading">☿ 水星 (Mercury)</h3>
+            <p class="card-brief">最靠近太陽的最小行星。0.206 最高軌道離心率、3:2 自轉公轉軌道共振、佔半徑 85% 的超大金屬鐵核與 600 K 極端溫差。</p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;"><span class="tag-badge">#3:2軌道共振</span> <span class="tag-badge">#金屬核心</span></div>
+            <div class="card-foot-mono"><span>DATE : 2026-11-16</span><span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span></div>
+          </div>
+        </a>
+
+        <a href="pages/venus.html" class="article-card-avant" data-search="金星 venus 類地行星 逆行自轉 失控溫室效應 92大氣壓 462度 硫酸雲">
+          <span class="editorial-idx-overlap">05</span>
+          <div>
+            <div class="card-top-meta"><span class="category-tag-mono">第二行星</span></div>
+            <h3 class="card-heading">♀ 金星 (Venus)</h3>
+            <p class="card-brief">地球的孿生姐妹卻成高溫煉獄。順時針逆向自轉 243 天，92 大氣壓超臨界 CO₂ 與濃硫酸雲引發失控溫室效應，全球均溫高達 462°C。</p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;"><span class="tag-badge">#逆行自轉</span> <span class="tag-badge">#失控溫室效應</span></div>
+            <div class="card-foot-mono"><span>DATE : 2026-11-16</span><span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span></div>
+          </div>
+        </a>
+
+        <a href="pages/earth.html" class="article-card-avant" data-search="地球 earth 類地行星 太陽日 恆星日 全球磁場 70%海洋 暗淡藍點 阿波羅8號">
+          <span class="editorial-idx-overlap">06</span>
+          <div>
+            <div class="card-top-meta"><span class="category-tag-mono">第三行星</span></div>
+            <h3 class="card-heading">🌍 地球 (Earth)</h3>
+            <p class="card-brief">已知唯一生命綠洲。剖析太陽日 (24h) 與恆星日 (23h56m) 的公轉幾何差、液態外核地磁發電機防護盾、71% 液態水海洋與生物富氧圈。</p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;"><span class="tag-badge">#太陽日恆星日</span> <span class="tag-badge">#全球磁層</span></div>
+            <div class="card-foot-mono"><span>DATE : 2026-11-16</span><span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span></div>
+          </div>
+        </a>
+
+        <a href="pages/mars.html" class="article-card-avant" data-search="火星 mars 類地行星 氧化鐵 奧林帕斯山 水手號峽谷 火星衝 磁場消失 大氣剝蝕">
+          <span class="editorial-idx-overlap">07</span>
+          <div>
+            <div class="card-top-meta"><span class="category-tag-mono">第四行星</span></div>
+            <h3 class="card-heading">♂ 火星 (Mars)</h3>
+            <p class="card-brief">鐵鏽紅沙漠世界。擁有 24h37m 自轉週期、22 公里高奧林帕斯巨神火山；解析早期磁場冷卻熄滅後，太陽風剝蝕大氣導致水圈消失的史詩。</p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;"><span class="tag-badge">#氧化鐵地表</span> <span class="tag-badge">#大氣剝蝕</span></div>
+            <div class="card-foot-mono"><span>DATE : 2026-11-16</span><span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span></div>
+          </div>
+        </a>
+
+        <!-- Card 17: 類地行星 (Terrestrial Planets) -->
+        <a href="pages/terrestrial-planets.html" class="article-card-avant" data-search="類地行星 岩石行星 水星 金星 地球 火星 矽酸鹽 鐵核 Gliese 581c">
+          <span class="editorial-idx-overlap">17</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono">岩質行星</span>
+            </div>
+            <h3 class="card-heading">🪨 類地行星 (Terrestrial Planets)</h3>
+            <p class="card-brief">
+              認識內太陽系四大岩質行星（水星、金星、地球、火星）的共同結構：高密度金屬鐵核與矽酸鹽岩石地函，以及系外「地球 2.0」搜尋前景。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge">#類地行星</span>
+              <span class="tag-badge">#岩石行星</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 18: 類木行星 (Jovian Planets) -->
+        <a href="pages/jovian-planets.html" class="article-card-avant" data-search="類木行星 氣態巨行星 冰巨行星 木星 土星 天王星 海王星 金屬氫 熱木星 行星遷徙">
+          <span class="editorial-idx-overlap">18</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono">巨行星家族</span>
+            </div>
+            <h3 class="card-heading">🌀 類木行星 (Jovian Planets)</h3>
+            <p class="card-brief">
+              剖析外太陽系四大巨行星的共通特徵與內部分化：氫氦為主的「氣態巨行星（木星、土星）」與水氨甲烷為主的「冰巨行星（天王星、海王星）」。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge">#類木行星</span>
+              <span class="tag-badge">#氣態巨行星</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 19: 木星 (Jupiter) -->
+        <a href="pages/jupiter.html" class="article-card-avant" data-search="木星 jupiter 歲星 5.2AU 317.8倍 大紅斑 金屬氫 伽利略衛星 朱諾號">
+          <span class="editorial-idx-overlap">19</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono">氣態巨行星</span>
+            </div>
+            <h3 class="card-heading">♃ 木星 (Jupiter)</h3>
+            <p class="card-brief">
+              太陽系體積與質量最大的行星（地球 317.8 倍），自轉僅 9.9 小時居行星之冠。解析條紋雲帶、持續逾 350 年的大紅斑與太陽系最強行星磁場。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge">#木星</span>
+              <span class="tag-badge">#大紅斑</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 20: 土星 (Saturn) -->
+        <a href="pages/saturn.html" class="article-card-avant" data-search="土星 saturn 鎮星 9.58AU 29.46年 密度小於1 土星環 卡西尼縫 伽利略">
+          <span class="editorial-idx-overlap">20</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono">行星環奇觀</span>
+            </div>
+            <h3 class="card-heading">♄ 土星 (Saturn)</h3>
+            <p class="card-brief">
+              太陽系唯一平均密度比水還小的氣態巨行星，擁有由 99% 以上水冰顆粒構成的壯麗土星環與卡西尼縫，隨公轉傾角還會上演「土星環消失」奇景。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge">#土星</span>
+              <span class="tag-badge">#土星環</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 21: 天王星 (Uranus) -->
+        <a href="pages/uranus.html" class="article-card-avant" data-search="天王星 uranus 冰巨行星 19.23AU 84.32年 97.77度 躺著轉 1781年 勒維耶">
+          <span class="editorial-idx-overlap">21</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono">冰巨行星</span>
+            </div>
+            <h3 class="card-heading">♅ 天王星 (Uranus)</h3>
+            <p class="card-brief">
+              太陽系唯一自轉軸傾斜達 97.77 度「躺著公轉」的冰巨行星！內部富含水、氨、甲烷高壓冰幔，其軌道攝動異常更直接促成了海王星的預測發現。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge">#天王星</span>
+              <span class="tag-badge">#冰巨行星</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 22: 海王星 (Neptune) -->
+        <a href="pages/neptune.html" class="article-card-avant" data-search="海王星 neptune 30.1AU 165.17年 大黑斑 冥王星 3:2共振 韋伯望遠鏡 海衛一">
+          <span class="editorial-idx-overlap">22</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono">最外圍行星</span>
+            </div>
+            <h3 class="card-heading">♆ 海王星 (Neptune)</h3>
+            <p class="card-brief">
+              距離太陽 30.1 AU 的最外圍行星，公轉一圈需 165.17 年。解析與冥王星永不相撞的 3:2 軌道共振、航海家 2 號大黑斑風暴與韋伯太空望遠鏡光環影像。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge">#海王星</span>
+              <span class="tag-badge">#冰巨行星</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; margin-bottom: 24px; color: var(--ink-black); display: flex; align-items: center; gap: 8px;">
+        <span style="color: var(--electric-blue); font-size: 1.1rem;">■</span> 1.2 衛星與矮行星 (行星定義與地月系統專題全收錄)
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 36px 28px; margin-bottom: 48px;">
+        <a href="pages/planet-definition-and-dwarf-planets.html" class="article-card-avant" data-search="行星定義 矮行星 冥王星 穀神星 鬩神星 iau 國際天文聯合會 軌道清除">
+          <span class="editorial-idx-overlap">03</span>
+          <div>
+            <div class="card-top-meta"><span class="category-tag-mono" style="background: var(--electric-blue);">衛星與矮行星</span></div>
+            <h3 class="card-heading">🪐 行星定義與矮行星分類</h3>
+            <p class="card-brief">2006 年 IAU 確立行星三大動力學判據。剖析「軌道清除能力」本質、流體靜力平衡質量門檻，以及冥王星降級與穀神星升格之歷史脈絡。</p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;"><span class="tag-badge accent">#矮行星</span> <span class="tag-badge">#IAU決策</span></div>
+            <div class="card-foot-mono"><span>DATE : 2026-11-16</span><span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span></div>
+          </div>
+        </a>
+
+        <!-- Card 08: 月球 (The Moon) -->
+        <a href="pages/moon.html" class="article-card-avant" data-search="月球 moon 太陰 天然衛星 384400公里 月海 隕石坑 陰曆 農曆 伽利略">
+          <span class="editorial-idx-overlap">08</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">天然衛星</span>
+            </div>
+            <h3 class="card-heading">🌕 月球 (The Moon)</h3>
+            <p class="card-brief">
+              地球唯一的天然衛星，平均距離 38.44 萬公里且每年遠離 3.8 公分。解析內部分層、月海與隕石坑地貌，以及陰曆與陰陽合曆天文原理。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#地月系統</span>
+              <span class="tag-badge">#月海與隕石坑</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 09: 月球起源 (Origin of the Moon) -->
+        <a href="pages/lunar-origin.html" class="article-card-avant" data-search="月球起源 同源說 捕獲說 分裂說 大碰撞說 鐵核比例 角動量">
+          <span class="editorial-idx-overlap">09</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">演化假說</span>
+            </div>
+            <h3 class="card-heading">💥 月球起源 (Origin of the Moon)</h3>
+            <p class="card-brief">
+              比較同源說、捕獲說、分裂說與大碰撞說四大月球起源假說。剖析火星大小原始行星撞擊早期地球後，碎片凝聚成月球的關鍵證據。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#大碰撞說</span>
+              <span class="tag-badge">#地月角動量</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 10: 恆星月及朔望月 (Sidereal & Synodic Month) -->
+        <a href="pages/sidereal-and-synodic-month.html" class="article-card-avant" data-search="恆星月 朔望月 27.3天 29.5天 潮汐鎖定 月相 地相">
+          <span class="editorial-idx-overlap">10</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">月球週期</span>
+            </div>
+            <h3 class="card-heading">🌗 恆星月及朔望月 (Sidereal & Synodic Month)</h3>
+            <p class="card-brief">
+              區分月球公轉的兩大基準週期：以遙遠恆星為準的恆星月（27.3 天）與以月相盈虧為準的朔望月（29.5 天），並解析月球上看到的「地相」。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#恆星月</span>
+              <span class="tag-badge">#朔望月</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 11: 月球天平動 (Lunar Libration) -->
+        <a href="pages/lunar-libration.html" class="article-card-avant" data-search="月球天平動 59% 經度天平動 緯度天平動 周日天平動 視差天平動 物理天平動">
+          <span class="editorial-idx-overlap">11</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">觀測效應</span>
+            </div>
+            <h3 class="card-heading">🔄 月球天平動 (Lunar Libration)</h3>
+            <p class="card-brief">
+              月球雖被潮汐鎖定，但因軌道橢圓與傾角產生輕微擺動（天平動），使地球觀測者累積能看見高達 59% 的月球表面。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#天平動</span>
+              <span class="tag-badge">#59%月面</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 12: 潮汐現象 (Tidal Phenomena) -->
+        <a href="pages/tidal-phenomena.html" class="article-card-avant" data-search="潮汐現象 引潮力 滿潮 乾潮 大潮 小潮 12小時25分 延後50分鐘 潮汐鎖定">
+          <span class="editorial-idx-overlap">12</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">引力動力學</span>
+            </div>
+            <h3 class="card-heading">🌊 潮汐現象 (Tidal Phenomena)</h3>
+            <p class="card-brief">
+              解析月球與太陽引潮力如何牽動地球海洋產生滿潮與乾潮，為何每日漲潮延後 50 分鐘，以及潮汐摩擦如何最終造成天體潮汐鎖定。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#潮汐力</span>
+              <span class="tag-badge">#大潮與小潮</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 13: 月球兩大地形 (Lunar Maria & Craters) -->
+        <a href="pages/lunar-maria-and-craters.html" class="article-card-avant" data-search="月球兩大地形 月海 隕石坑 玄武岩 太空風化 月球正面 月球背面">
+          <span class="editorial-idx-overlap">13</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">月球地質</span>
+            </div>
+            <h3 class="card-heading">🌑 月球兩大地形 (Lunar Maria & Craters)</h3>
+            <p class="card-brief">
+              剖析月球表面明暗兩大地形：古代玄武岩岩漿填滿的暗色「月海」與小行星撞擊形成的亮色「隕石坑」，以及無大氣環境下的太空風化。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#月海</span>
+              <span class="tag-badge">#隕石坑</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; margin-bottom: 16px; color: var(--ink-muted); display: flex; align-items: center; gap: 8px;">
+        <span style="color: var(--ink-muted); font-size: 1.1rem;">□</span> 1.3 太陽系小天體 (PENDING INGESTION)
+      </div>
+      <div style="border: 1px dashed var(--ink-black); padding: 18px 24px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-muted); background: #ffffff;">
+        // NO ARTICLES INGESTED YET · 尚無收錄條目（待攝入新資料）
+      </div>
+    </section>
+
+    <section id="cat2" style="margin-bottom: 50px;">
+      <div style="border-bottom: 1px solid var(--ink-black); padding-bottom: 8px; margin-bottom: 16px; display: flex; justify-content: space-between;">
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; letter-spacing: -0.01em;">02 // 系外行星與適居帶</h3>
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted);">0 ARTICLES</span>
+      </div>
+      <div style="border: 1px dashed var(--ink-black); padding: 16px 20px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-muted);">
+        // WAITING FOR EXOPLANET SOURCES · 待攝入系外行星資料
+      </div>
+    </section>
+
+    <section id="cat3" style="margin-bottom: 50px;">
+      <div style="border-bottom: 1px solid var(--ink-black); padding-bottom: 8px; margin-bottom: 16px; display: flex; justify-content: space-between;">
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; letter-spacing: -0.01em;">03 // 恆星演化與緻密天體</h3>
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted);">0 ARTICLES</span>
+      </div>
+      <div style="border: 1px dashed var(--ink-black); padding: 16px 20px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-muted);">
+        // WAITING FOR STELLAR SOURCES · 待攝入恆星演化資料
+      </div>
+    </section>
+
+    <section id="cat4" style="margin-bottom: 50px;">
+      <div style="border-bottom: 1px solid var(--ink-black); padding-bottom: 8px; margin-bottom: 16px; display: flex; justify-content: space-between;">
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; letter-spacing: -0.01em;">04 // 星系結構與宇宙學</h3>
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted);">0 ARTICLES</span>
+      </div>
+      <div style="border: 1px dashed var(--ink-black); padding: 16px 20px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-muted);">
+        // WAITING FOR COSMOLOGY SOURCES · 待攝入星系與宇宙學資料
+      </div>
+    </section>
+
+    <section id="cat5" style="margin-bottom: 60px;">
+      <div style="border-bottom: 2px solid var(--ink-black); padding-bottom: 12px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--electric-blue); letter-spacing: 0.15em; font-weight: 700;">SECTION 05 // CATEGORY</div>
+          <h2 style="font-family: var(--font-display); font-size: 2.8rem; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase;">天文觀測與太空任務</h2>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-muted);">3 ARTICLES ARCHIVED</div>
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; margin-bottom: 24px; color: var(--ink-black); display: flex; align-items: center; gap: 8px;">
+        <span style="color: var(--electric-blue); font-size: 1.1rem;">■</span> 5.1 天球座標與天文曆法觀測
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 36px 28px;">
+        <!-- Card 14: 恆星日及太陽日 (Sidereal & Solar Day) -->
+        <a href="pages/sidereal-and-solar-day.html" class="article-card-avant" data-search="恆星日 太陽日 23小時56分 24小時 4分鐘 北極星 周日運動 周年運動">
+          <span class="editorial-idx-overlap">14</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">時間基準</span>
+            </div>
+            <h3 class="card-heading">⏱️ 恆星日及太陽日 (Sidereal & Solar Day)</h3>
+            <p class="card-brief">
+              比較地球自轉 360 度的「恆星日（23 小時 56 分）」與太陽連續兩次過中天的「太陽日（24 小時）」，解開恆星每天提早 4 分鐘升起之謎。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#恆星日</span>
+              <span class="tag-badge">#太陽日</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 15: 二十四節氣 (Twenty-Four Solar Terms) -->
+        <a href="pages/twenty-four-solar-terms.html" class="article-card-avant" data-search="二十四節氣 黃道 23.5度 回歸年 365.2422天 冬至 淮南子 閏年">
+          <span class="editorial-idx-overlap">15</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">太陽黃道曆法</span>
+            </div>
+            <h3 class="card-heading">🗓️ 二十四節氣 (Twenty-Four Solar Terms)</h3>
+            <p class="card-brief">
+              揭開「吃湯圓多一歲」背後的古代天文曆法邏輯：二十四節氣其實是依太陽在黃道位置制定的「陽曆」，反映地球 23.5 度軸傾帶來的四季變化。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#二十四節氣</span>
+              <span class="tag-badge">#黃道</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 16: 天球 (Celestial Sphere) -->
+        <a href="pages/celestial-sphere.html" class="article-card-avant" data-search="天球 赤經 赤緯 天北極 天南極 天球赤道 赤道座標系 黃道">
+          <span class="editorial-idx-overlap">16</span>
+          <div>
+            <div class="card-top-meta">
+              <span class="category-tag-mono" style="background: var(--electric-blue);">天體座標系</span>
+            </div>
+            <h3 class="card-heading">🌐 天球 (Celestial Sphere)</h3>
+            <p class="card-brief">
+              將地球經緯度概念向外投影至無限遠宇宙空間！認識天球、天北極、天球赤道，以及天文學家定位全天星體的「赤道座標系（赤經與赤緯）」。
+            </p>
+          </div>
+          <div>
+            <div style="margin-bottom: 14px;">
+              <span class="tag-badge accent">#天球</span>
+              <span class="tag-badge">#赤道座標系</span>
+            </div>
+            <div class="card-foot-mono">
+              <span>DATE : 2026-11-16</span>
+              <span style="color: var(--electric-blue); font-weight: 700;">VIEW ARTICLE →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function filterCategory(catId) {
+      document.querySelectorAll('.btn-editorial').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cats = ['cat1', 'cat2', 'cat3', 'cat4', 'cat5'];
+      cats.forEach(id => {
+        const el = document.getElementById(id);
+        if (catId === 'all' || catId === id) {
+          el.style.display = 'block';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.article-card-avant');
+      cards.forEach(card => {
+        const text = (card.dataset.search + ' ' + card.innerText).toLowerCase();
+        if (!q || text.includes(q)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
